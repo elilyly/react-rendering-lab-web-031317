@@ -30,6 +30,7 @@ export default class Pikachu extends React.Component {
     });
   }
 
+
   render() {
     return (
       <div>
@@ -37,5 +38,9 @@ export default class Pikachu extends React.Component {
         <button onClick={this.makeSmaller}>Smaller!</button>
       </div>
     )
+  }
+
+  componentDidUpdate(){
+    this.resizePikachu()
   }
 }
